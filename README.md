@@ -1,10 +1,15 @@
-# MyApp
+# The task tracker
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.0.5.
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.0.5 and with the use of a fake REST API from JSON Server `https://github.com/typicode/json-server`. This project was inspired by `https://www.youtube.com/watch?v=3dHNOWTI7H8`.
+
 
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+
+## Fake REST API
+
+Run `json-server --watch db.json` for the fake REST server. Navigate to  `http://localhost:3000/posts/`
 
 ## Code scaffolding
 
