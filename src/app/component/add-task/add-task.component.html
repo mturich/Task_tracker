@@ -1,0 +1,23 @@
+<!-- ngSubmit activates when Submit Button is clicked-->
+<form *ngIf="showAddTask" class="add-form" (ngSubmit)="onSubmit()">
+<div class="form-control">
+  <label for="text">Task</label>
+  <!-- 2 way data binding [(ngModel)] = [] = input + () = event: output 
+  event can be accessed with {{text}} -->
+  <input type="text" name="text" [(ngModel)]="text"  id="text" placeholder="Add Task" required>
+</div>
+
+<div class="form-control">
+  <label for="day">Day & Time </label>
+  <input type="text" name="day" [(ngModel)]="day"  id="day" placeholder="Add Day & Time" required>
+</div>
+
+<div class="form-control form-control-check">  
+  <label for="reminder">Set Reminder</label>
+  <input type="checkbox" name="reminder" [(ngModel)]="reminder" id="reminder" >
+</div>
+
+<div class=form-control>
+  <input type="Submit" value="Add Task" class="btn btn-block">
+</div>
+</form>
